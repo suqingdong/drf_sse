@@ -1,0 +1,2 @@
+include requirements.txt
+include drf_sse/version.json

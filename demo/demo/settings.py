@@ -137,4 +137,4 @@ MIDDLEWARE.insert(0, 'corsheaders.middleware.CorsMiddleware')
 CORS_ALLOW_ALL_ORIGINS = True
 
 # SSE_RESPONSE_MODE = 'add'
-SSE_ENCODE_BASE64 = True
+# SSE_ENCODE_BASE64 = True
