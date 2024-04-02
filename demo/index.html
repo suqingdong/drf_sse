@@ -11,7 +11,7 @@
     <p id="result"></p>
 </body>
 <script>
-    const eventSource = new EventSource('http://127.0.0.1:8000/demo/')
+    const eventSource = new EventSource('http://127.0.0.1:8000/sse/')
 
     eventSource.onmessage = (event) => {
         console.log(event)

@@ -1,4 +1,4 @@
-from .renders import SSERenderer
+from .renderers import SSERenderer
 
 
 class SSEMixin(object):

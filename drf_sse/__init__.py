@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from .renders import SSERenderer
+from .renderers import SSERenderer
 from .responses import SSEResponse
 from .mixins import SSEMixin
 
