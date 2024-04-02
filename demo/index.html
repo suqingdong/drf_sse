@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test SSE Request</title>
+</head>
+
+<body>
+    <p id="result"></p>
+</body>
+<script>
+    const eventSource = new EventSource('http://127.0.0.1:8000/sse/')
+
+    eventSource.onmessage = (event) => {
+        console.log(event)
+        document.getElementById('result').innerHTML += event.data + ' '
+    }
+
+    eventSource.onopen = () => {
+        console.log('sse opened.')
+    }
+
+    eventSource.addEventListener('end', () => {
+        eventSource.close()
+        console.log('sse closed.')
+    })
+
+</script>
+
+</html>
