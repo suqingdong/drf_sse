@@ -8,7 +8,7 @@ python3 -m pip install drf-sse
 
 ## Usage
 
-1. Edit your `setting.py`:
+##### 1. Edit your `setting.py`:
 
 ```python
 INSTALL_APPS += [
@@ -22,10 +22,10 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 # SSE configuration
 # SSE_RESPONSE_MODE = 'add'  # [optional, default: "chunk"]
-SSE_ENCODE_BASE64 = True     # [optionnal, default: False]
+SSE_ENCODE_BASE64 = True     # [optional, default: False]
 ```
 
-2. Use in your views:
+##### 2. Use in your views:
 
 ```python
 import time
@@ -46,7 +46,7 @@ class MyView(SSEMixin, APIView):
         # return SSEResponse(iter_data(), mode='chunk', encode=False)  # will overwrite settings
 ```
 
-3. Test from the frontend:
+##### 3. Test from the frontend:
 
 - `SSE_ENCODE_BASE64 = False`
 
