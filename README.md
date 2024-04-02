@@ -9,6 +9,7 @@ python3 -m pip install drf-sse
 ## Usage
 
 1. Edit your `setting.py`:
+
 ```python
 INSTALL_APPS += [
     'rest_framework',
@@ -73,6 +74,8 @@ class MyView(SSEMixin, APIView):
 <summary>Preview</summary>
 <img src="https://suqingdong.github.io/drf_sse/src/sse.png" widt="60%"/>
 </details>
+
+---
 
 - `SSE_ENCODE_BASE64 = True`
 
