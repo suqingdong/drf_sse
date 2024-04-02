@@ -1,8 +1,8 @@
 {
     "prog": "drf-sse",
     "desc": "SSE(Server-Sent Events) for DjangoRestFramework",
-    "url": "https://github.com/suqingdong/drf_sse_mixin",
+    "url": "https://github.com/suqingdong/drf_sse",
     "author": "suqingdong",
     "author_email": "suqingdong1114@gmail.com",
-    "version": "1.0.0"
+    "version": "1.0.1"
 }
